@@ -1,0 +1,10 @@
+{
+    "dependencies": {
+        "underscore": "*",
+        "mkdirp": "*",
+        "daemon": "*"
+    },
+    "description": "A test mail server",
+    "name": "test_mail_server",
+    "version": "0.0.1"
+}
