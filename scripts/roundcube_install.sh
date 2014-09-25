@@ -3,6 +3,11 @@
 # We need php, apache and mysql first.
 bash /vagrant/scripts/lamp_install.sh
 
+# Install PEAR, which is a dependency.
+sudo apt-get install php-pear
+sudo pear channel-update pear.php.net
+sudo pear upgrade-all
+
 # Download Roundcube
 git clone https://github.com/roundcube/roundcubemail.git /home/vagrant/roundcube
 
